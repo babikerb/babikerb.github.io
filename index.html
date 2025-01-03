@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Resume - Start Bootstrap Theme</title>
+  <title>Babiker's Portfolio</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#articles">Articles</a>
+          <a class="nav-link js-scroll-trigger" href="#contributions">Contributions</a>
         </li>
       </ul>
     </div>
@@ -321,31 +321,91 @@
         
     </section>
 
-    <section id="articles" class="resume-section p-3 p-lg-5 d-flex flex-column">
-      <h2 class="mb-5">Articles</h2>
+    <section id="contributions" class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <h2 class="mb-5">Contributions</h2>
+    
+      <div class="my-auto">
+        <img 
+          src="https://ghchart.rshah.org/babikerb" 
+          alt="GitHub Contributions Chart" 
+          class="github-chart">
+      </div>
     
       <div class="blog-entry mb-4">
-        <h3><a href="https://medium.com/@bbabiker09/software-engineering-vs-coding-a2c8e914df3a" target="_blank">Software Engineering vs. Coding</a></h3>
+        <h3>
+          <a href="https://medium.com/@bbabiker09/software-engineering-vs-coding-a2c8e914df3a" target="_blank">
+            Software Engineering vs. Coding
+          </a>
+        </h3>
         <p class="text-muted">A deep dive into the differences between Software Engineering and Programming</p>
-        <p class="blog-excerpt">In this article, we explore the nuances between software engineering and coding, including the various skills required for each role, and how they complement each other in the development process.</p>
+        <p class="blog-excerpt">
+          In this article, we explore the nuances between software engineering and coding, including the various skills required for each role, and how they complement each other in the development process.
+        </p>
         <a href="https://medium.com/@bbabiker09/software-engineering-vs-coding-a2c8e914df3a" target="_blank">Read More</a>
       </div>
     
       <div class="blog-entry mb-4">
-        <h3><a href="https://medium.com/@bbabiker09/soft-skills-in-tech-d89f15c9956d" target="_blank">Soft Skills in Tech</a></h3>
+        <h3>
+          <a href="https://medium.com/@bbabiker09/soft-skills-in-tech-d89f15c9956d" target="_blank">
+            Soft Skills in Tech
+          </a>
+        </h3>
         <p class="text-muted">A discussion on the importance of soft skills in the tech industry</p>
-        <p class="blog-excerpt">This article discusses how soft skills such as communication, teamwork, and adaptability play a crucial role in the tech industry and how they complement technical skills to foster success.</p>
+        <p class="blog-excerpt">
+          This article discusses how soft skills such as communication, teamwork, and adaptability play a crucial role in the tech industry and how they complement technical skills to foster success.
+        </p>
         <a href="https://medium.com/@bbabiker09/soft-skills-in-tech-d89f15c9956d" target="_blank">Read More</a>
       </div>
-    
-      <!-- Add other blog entries here -->
     </section>
+    
     
     
     
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Github Calendar Script -->
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar-responsive.css">
+
+<script>
+  // Initialize the GitHub Calendar
+  GitHubCalendar(".calendar", "babikerb", {
+      responsive: true
+  });
+
+  // Add tooltips on hover
+  document.addEventListener("DOMContentLoaded", () => {
+      const boxes = document.querySelectorAll(".calendar .day");
+      boxes.forEach(box => {
+          const tooltip = document.createElement("span");
+          tooltip.className = "tooltip";
+          tooltip.style.position = "absolute";
+          tooltip.style.padding = "5px";
+          tooltip.style.backgroundColor = "#333";
+          tooltip.style.color = "#fff";
+          tooltip.style.borderRadius = "4px";
+          tooltip.style.fontSize = "10px";
+          tooltip.style.visibility = "hidden";
+          tooltip.style.transform = "translate(-50%, -120%)";
+
+          box.appendChild(tooltip);
+          box.style.position = "relative";
+
+          box.addEventListener("mouseenter", () => {
+              tooltip.textContent = box.getAttribute("title");
+              tooltip.style.visibility = "visible";
+          });
+
+          box.addEventListener("mouseleave", () => {
+              tooltip.style.visibility = "hidden";
+          });
+      });
+  });
+</script>
+
+
     
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

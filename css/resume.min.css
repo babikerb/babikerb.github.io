@@ -224,5 +224,41 @@
     color: #0f3372;
   }
   
+/* Left-aligned layout for the contributions section */
+#contributions {
+  text-align: left; /* Ensure content is aligned to the left */
+}
 
-  
+/* Styling for GitHub contributions chart */
+.github-chart {
+  width: 100%; /* Make it larger to fit the container */
+  max-width: 900px; /* Set a reasonable max size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 2rem; /* Add spacing below the chart */
+}
+
+/* Equal spacing between blog entries */
+.blog-entry {
+  margin-bottom: 2rem; /* Uniform spacing between articles */
+}
+
+/* Headings spacing */
+#contributions h2 {
+  margin-bottom: 3rem; /* Spacing below the section heading */
+}
+
+/* Style the blog entry headings */
+.blog-entry h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Improve readability of the muted text */
+.text-muted {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Add spacing below blog excerpts */
+.blog-excerpt {
+  margin-bottom: 0.5rem;
+}
