@@ -12,11 +12,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Convert DOCX to PDF
+      - name: Install LaTeX and Pandoc
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc
-          pandoc resume.docx -o resume.pdf
+          sudo apt-get install -y pandoc texlive-xetex texlive-latex-recommended
+
+      - name: Convert DOCX to PDF
+        run: |
+          pandoc resume.docx -o resume.pdf --pdf-engine=xelatex
 
       - name: Commit and Push PDF
         uses: stefanzweifel/git-auto-commit-action@v4
