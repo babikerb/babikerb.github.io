@@ -29,16 +29,19 @@
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">
-                Babiker
-            </span>
-            <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pfp.png" alt="">
-            </span>
+                <!-- Mobile version -->
+                <span class="d-lg-none d-flex align-items-center">
+                    <img class="img-profile-mobile rounded-circle mr-2" src="img/pfp.png" alt="Profile picture" style="width: 40px; height: 40px;">
+                    Babiker
+                </span>
+                <!-- Desktop version -->
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pfp.png" alt="Profile picture">
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -63,44 +66,46 @@
                 </ul>
             </div>
         </nav>
+        
         <div class="container-fluid p-0">
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">Babiker
-                    <span class="text-primary">Babiker</span>
-                </h1>
-                <div class="subheading mb-5">Hawthorne, CA ·
-                    <a href="mailto:bbabiker09@gmail.com">bbabiker09@gmail.com</a>
+            <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+                <div class="my-auto">
+                    <h1 class="mb-0">Babiker
+                        <span class="text-primary">Babiker</span>
+                    </h1>
+                    <div class="subheading mb-5">Hawthorne, CA ·
+                        <a href="mailto:bbabiker09@gmail.com">bbabiker09@gmail.com</a>
+                    </div>
+                    <p class="mb-5">Aspiring software engineer with a strong foundation in computer science, currently pursuing a
+                        Bachelor of Science in Computer Science @ CSUF. I bring a unique blend of hands-on experience and academic
+                        rigor, demonstrated through internships, fellowships, and leadership roles.
+                    </p>
+                    <ul class="list-inline list-social-icons mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/bbabiker">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/babikerb">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://bbabiker.com/resume" class="btn btn-primary text-white">
+                            Resume
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="mb-5">Aspiring software engineer with a strong foundation in computer science, currently pursuing a
-                    Bachelor of Science in Computer Science @ CSUF. I bring a unique blend of hands-on experience and academic
-                    rigor, demonstrated through internships, fellowships, and leadership roles.
-                </p>
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/bbabiker">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/babikerb">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://bbabiker.com/resume" class="btn btn-primary text-white">
-                        Resume
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5">Experience</h2>
@@ -179,7 +184,6 @@
             <div class="filter-links mb-4" style="text-align: left; margin: 0; padding: 0;">
                 <span class="filter-link" data-filter="all">All</span>
                 <span class="filter-link" data-filter="web-dev">Web</span>
-                <span class="filter-link" data-filter="app-dev">App</span>
                 <span class="filter-link" data-filter="gui">GUI</span>
                 <span class="filter-link" data-filter="cli">CLI</span>
             </div>
@@ -221,7 +225,7 @@
                         <p class="mt-2 text-center">IceMan - C++</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 mb-4 project" data-category="app-dev">
+                <div class="col-md-4 col-12 mb-4 project" data-category="gui">
                     <div class="project-container" style="display: flex; flex-direction: column; align-items: center;">
                         <a href="https://github.com/babikerb/TaskFlow" target="_blank">
                         <img src="img/taskflow.jpg" alt="TaskFlow Thumbnail" class="img-fluid rounded"
@@ -351,8 +355,18 @@
         </section>
         <section id="contributions" class="resume-section p-3 p-lg-5 d-flex flex-column">
             <h2 class="mb-5">Contributions</h2>
-            <div class="my-auto">
-                <img src="https://ghchart.rshah.org/babikerb" alt="GitHub Contributions Chart" class="github-chart">
+            <div class="blog-entry mb-4">
+                <h3>
+                    <a href="https://www.linkedin.com/posts/bbabiker_im-happy-to-share-that-im-starting-a-new-activity-7244030081059237891-9lKT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFXHBUBfWKewVOvsJ-QyPKhs0ON-6gJAaA" target="_blank">
+                    Bright Start International Education
+                    </a>
+                </h3>
+                <p class="text-muted">Intern @ Bright Start International Education</p>
+                <p class="blog-excerpt">
+                    Thrilled to share that I’ve landed my first internship with Bright Start International Education! I'm eager to apply my skills and learn in a real-world environment. Can't wait to get started and contribute to their mission.
+                </p>
+                <a href="https://medium.com/@bbabiker09/software-engineering-vs-coding-a2c8e914df3a" target="_blank">Read
+                More</a>
             </div>
             <div class="blog-entry mb-4">
                 <h3>
@@ -381,29 +395,79 @@
                 </p>
                 <a href="https://medium.com/@bbabiker09/soft-skills-in-tech-d89f15c9956d" target="_blank">Read More</a>
             </div>
-        </section>
-        <!-- Contact Form Section -->
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
-            <div class="my-auto">
-                <h2 class="mb-5" style="text-align: left;">Contact Me</h2>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required class="form-control"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-                <p id="status-message" class="status-message"></p>
+            <div class="blog-entry mb-4">
+                <h3>
+                    <a href="https://www.linkedin.com/posts/bbabiker_softwareengineering-headstarter-activity-7219984427425091584-Cl5x?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFXHBUBfWKewVOvsJ-QyPKhs0ON-6gJAaA" target="_blank">
+                    Accepted into Headstarter AI Fellowship
+                    </a>
+                </h3>
+                <p class="text-muted">Headtarter AI Fellowship</p>
+                <p class="blog-excerpt">
+                    Excited to announce that I've been accepted into the Headstarter AI Fellowship! I'll be building 5 AI projects, attending hackathons, and aiming to make an impact in the tech community. Looking forward to the journey ahead!
+                </p>
+                <a href="https://medium.com/@bbabiker09/software-engineering-vs-coding-a2c8e914df3a" target="_blank">Read
+                More</a>
             </div>
         </section>
+        <!-- Contact Form Section -->
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+    <div class="my-auto">
+        <h2 class="mb-5">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hawthorne, CA</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:bbabiker09@gmail.com">bbabiker09@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/bbabiker" target="_blank">linkedin.com/in/bbabiker</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-header">
+                    <h3>Send Me a Message</h3>
+                    <p>I'll get back to you as soon as possible</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required class="form-control" placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required class="form-control" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required class="form-control" placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-send">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        <p id="status-message" class="status-message"></p>
+    </div>
+</section>
         <script>
             document.getElementById("contact-form").addEventListener("submit", async function (event) {
               event.preventDefault();
@@ -444,6 +508,7 @@
                 document.getElementById("status-message").textContent = 'Network error: ' + error.message;
                 document.getElementById("status-message").style.color = 'red';
               }
+              document.getElementById("contact-form").reset();
             });
         </script>
         <!-- Bootstrap core JavaScript -->
